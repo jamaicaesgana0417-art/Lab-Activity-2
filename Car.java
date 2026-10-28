@@ -12,17 +12,4 @@ public Car(String brand, String model, int year,int numberofDoors){
         System.out.println("numberofDoors: " + numberofDoors);
 
     }
-
-      public void moveForward() {
-        System.out.println("Car is moving forward.");
-    }
-    public void moveBackward() {
-        System.out.println("Car is moving backward.");
-    }
-    public void moveLeft() {
-        System.out.println("Car is turning left.");
-    }
-    public void moveRight() {
-        System.out.println("Car is turning right.");
-    }
 }

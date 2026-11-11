@@ -1,5 +1,9 @@
-public class Car extends Vehicle{
-    int numberofDoors;
+public class Car extends Vehicle implements Serviceable {
+    private int numberofDoors;
+
+    public void service() {
+        System.out.println("Service car.");
+    }
 
 public Car(String brand, String model, int year,int numberofDoors){
     super(brand,model,year);

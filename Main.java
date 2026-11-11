@@ -1,5 +1,9 @@
 public class Main {
 
+     public static void performService(Serviceable item){
+       item.service();
+    }
+
     public static void printDetails(Vehicle vehicle) {
         vehicle.displayInfo();
     }
@@ -69,7 +73,14 @@ public class Main {
             currentVehicle.moveLeft();
             currentVehicle.moveRight();
             System.out.println();
+        }
 
+        Printer printer = new Printer();
+        Serviceable[] serviceables = {car, motorcycle, truck, printer};
+
+        for (Serviceable item : serviceables) {
+            item.service();
+            System.out.println();
         }
     }
 }
